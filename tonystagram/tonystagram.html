@@ -1,0 +1,191 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .post-head {
+        height: 60px;
+        /* background-color: aquamarine; */
+      }
+
+      .post-head-container {
+        display: flex;
+        position: relative;
+        padding: 16px;
+      }
+
+      .post-head-profile {
+        width: 32px;
+        height: 32px;
+      }
+
+      .post-head-profileImg {
+        width: 100%;
+        border-radius: 100%;
+      }
+
+      .post-head-name {
+        padding-left: 10px;
+        flex-grow: 1;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .post-head-btn {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .post-contents {
+        width: 100%;
+        /* background-color: bisque; */
+      }
+
+      .post-contentsImg {
+        width: 100%;
+      }
+
+      .post-infor {
+        height: 40px;
+        /* background-color: ; */
+      }
+
+      .post-infor-container {
+        display: flex;
+        position: relative;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      .post-infor-pages {
+        flex-grow: 1;
+      }
+
+      .inforBtn {
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+      }
+
+      .post-comment {
+        height: 100px;
+        /* background-color: bisque; */
+      }
+
+      .post-comment {
+        height: 100px;
+        /* background-color: bisque; */
+        padding: 0px 10px;
+        font-size: 16px;
+      }
+
+      .post-comment-like {
+        display: flex;
+        align-items: center;
+      }
+
+      .post-comment-likeImg {
+        width: 20px;
+        border-radius: 100%;
+      }
+
+      .post-comment-likeNumber {
+        padding-left: 6px;
+      }
+
+      .post-comment-list {
+        padding-top: 5px;
+        font-size: 14px;
+      }
+
+      .post-comment-item {
+        position: relative;
+      }
+
+      .post-comment-itemName {
+        font-weight: 700;
+      }
+
+      .post-comment-itemLike {
+        position: absolute;
+        right: 0px;
+      }
+
+      .commentBtn {
+        font-size: 100%;
+      }
+
+      .post-comment-date {
+        padding-top: 20px;
+        color: #999;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="post">
+      <div class="post-head">
+        <div class="post-head-container">
+          <div class="post-head-profile">
+            <img class="post-head-profileImg" src="profile.jpg" />
+          </div>
+          <div class="post-head-name">tny_gus</div>
+          <div class="post-head-btn">...</div>
+        </div>
+      </div>
+      <div class="post-contents">
+        <div class="post-contents-container">
+          <img class="post-contentsImg" src="content.jpg" />
+        </div>
+      </div>
+      <div class="post-infor">
+        <div class="post-infor-container">
+          <i class="far fa-heart inforBtn"></i>
+          <i class="far fa-comment inforBtn"></i>
+          <i class="far fa-share-square inforBtn"></i>
+          <span class="post-infor-pages"></span>
+          <i class="far fa-bookmark inforBtn"></i>
+        </div>
+      </div>
+      <div class="post-comment">
+        <div class="post-comment-like">
+          <span class="post-comment-likeProfile">
+            <img class="post-comment-likeImg" src="profile.jpg" />
+          </span>
+          <span class="post-comment-likeNumber">
+            <b>tny_gus</b>님 <b>외 79명</b>이 좋아합니다
+          </span>
+        </div>
+        <div class="post-comment-list">
+          <div class="post-comment-item">
+            <span class="post-comment-itemName">bbbbsh0</span>
+            <span class="post-comment-itemContent">어디갔어?</span>
+            <span class="post-comment-itemLike">
+              <i class="far fa-heart commentBtn"></i>
+            </span>
+          </div>
+          <div class="post-comment-item">
+            <span class="post-comment-itemName">dkdldjihye</span>
+            <span class="post-comment-itemContent">Awesome</span>
+            <span class="post-comment-itemLike">
+              <i class="far fa-heart commentBtn"></i>
+            </span>
+          </div>
+        </div>
+        <div class="post-comment-date">12시간 전</div>
+      </div>
+    </div>
+  </body>
+</html>
